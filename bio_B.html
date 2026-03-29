@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биография Антона Владимировича</title>
+    <link rel="icon" href="img/favicon.jpg" type="favicon/jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>БИОГРАФИЯ АНТОНА ВЛАДИМИРОВИЧА БУТАКОВА</h1>
+        </header>
+
+        <div class="profile_layout">
+            <div class="sidebar">
+                <div class="photo_container">
+                    <img src="img/img_card_B.jpg">
+                </div>
+                <div class="quick_info">
+                    <div class="info">
+                        <span class="subinfo">Дата рождения:</span>
+                        <span class="value">17 сентября 1990</span>
+                    </div>
+                    <div class="info">
+                        <span class="subinfo">Знак зодиака:</span>
+                        <span class="value">Дева</span>
+                    </div>
+                    <div class="info">
+                        <span class="subinfo">Место рождения:</span>
+                        <span class="value">пос. Боровской, Кустанайская область, Казахская ССР.</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="bio">
+                <h2>Антон Владимирович Бутаков</h2>
+                <p>Родился 16 сентября 1990 года в посёлке Боровской Кустанайской области (Казахстан), где и прошли его детские годы. В местной общеобразовательной школе он рос активным и артистичным ребёнком, постоянно участвуя в школьной самодеятельности и КВН, что помогло ему рано развить лидерские качества и уверенность на сцене. Сразу после получения школьного аттестата Антон принял решение связать свою жизнь с искусством и отправился в Екатеринбург, где с первой попытки поступил в театральный институт на курс Николая Коляды.</p>
+                <p>В 2008 году он стал студентом Екатеринбургского государственного театрального института (ЕГТИ), попав в мастерскую «солнца русской драматургии». Учёба на актёрском отделении была максимально прикладной: уже в студенческие годы он начал выходить на профессиональную сцену «Коляда-Театра», став частью знаменитого уральского театрального движения. В 2012 году Антон успешно получил диплом по специальности «Артист драматического театра и кино», прочно закрепившись в труппе как один из ведущих актёров.</p>
+                <p>Стремление не просто исполнять роли, но и создавать собственные миры, привело его к решению продолжить образование. В 2017 году Антон окончил тот же ЕГТИ, получив вторую специальность — «Режиссура театра». Этот этап стал переломным: имея за плечами огромный актёрский багаж в «Коляда-Театре» (где он проработал в общей сложности до 2020 года), Бутаков начал активно ставить спектакли, формируя свой уникальный, дерзкий и энергичный режиссёрский почерк.</p>
+                <p>Профессиональный путь привёл его к руководству Центром Современной Драматургии (ЦСД) в Екатеринбурге, где сегодня он занимает должности директора и главного режиссёра. Под его началом театр превратился в одну из самых востребованных независимых площадок страны, известную своими смелыми экспериментами. Помимо театральной деятельности, Антон успешно реализует себя в кино: в 2024 году он представил свой дебютный фильм «Бесконечный апрель», закрепив за собой статус универсального творца.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    background-color:#1a1a1a;
+    color:#f0f0f0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; 
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #e63946;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.profile_layout {
+    display: flex;
+    gap: 40px; 
+}
+
+
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+.photo_container img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.quick_info {
+    margin-top: 25px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.info{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.subinfo {
+    display: block;
+    font-size: 0.8rem;
+    color: #e63946; 
+    text-transform: uppercase;
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.bio{
+    flex: 2;
+}
+
+.bio h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.bio p {
+    margin-bottom: 20px;
+    color: #d1d1d1;
+}
+
+
+
+@media (max-width: 850px) {
+    body {
+        padding: 20px 15px; 
+    }
+
+    .profile_layout {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .sidebar {
+        min-width: 100%; 
+        order: 1; 
+    }
+
+    .bio {
+        order: 2;
+        text-align: left; 
+    }
+
+    .bio h2 {
+        font-size: 1.8rem; 
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .photo_container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+</style>

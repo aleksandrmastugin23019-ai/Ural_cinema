@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биография Алёны Тремазовой</title>
+    <link rel="icon" href="img/favicon.jpg" type="favicon/jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>БИОГРАФИЯ АЛЁНЫ ТРЕМАЗОВОЙ</h1>
+        </header>
+
+        <div class="profile_layout">
+            <div class="sidebar">
+                <div class="photo_container">
+                    <img src="img/img_card_T.jpg">
+                </div>
+                <div class="quick_info">
+                    <div class="info">
+                        <span class="subinfo">Дата рождения:</span>
+                        <span class="value">14 февраля 1990</span>
+                    </div>
+                    <div class="info">
+                        <span class="subinfo">Знак зодиака:</span>
+                        <span class="value">Водолей</span>
+                    </div>
+                    <div class="info">
+                        <span class="subinfo">Место рождения:</span>
+                        <span class="value">Свердловск, Свердловская область, СССР.</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="bio">
+                <h2>Алёна Тремазова</h2>
+                <p>Родилась 14 февраля 1990 года в Екатеринбурге. В 2007 году она окончила среднюю общеобразовательную школу, после чего начала активный поиск своего творческого пути в родном городе. Период с 2010 по 2012 год Алёна обучалась в драматургической мастерской Николая Коляды. Под руководством прославленного драматурга она освоила основы сценарного мастерства и глубокой психологической проработки персонажей, что позже легло в основу её уникального режиссерского почерка.</p>
+                <p>Для получения академической базы в области кинопроизводства Алёна отправилась в Москву, где в период с 2014 по 2016 год обучалась на режиссерском факультете ВГИКа (Всероссийского государственного института кинематографии им. С. А. Герасимова). Специализируясь на режиссуре и монтаже, она освоила классические каноны киноискусства и начала снимать свои первые профессиональные учебные работы. Этот этап позволил ей интегрироваться в федеральную киноиндустрию и подготовить почву для создания собственных масштабных образовательных проектов на Урале.</p>
+                <p>Знаковой датой в карьере Тремазовой стал сентябрь 2016 года, когда она основала в Екатеринбурге независимую киношколу «Мастерская КиноLook». Проект был запущен на базе Центра современной драматургии и стал первой в регионе площадкой для системного обучения молодых авторов полному циклу создания кино. С этого момента Алёна совмещает личное творчество с ролью художественного руководителя и педагога, обучая студентов истории кино, монтажу и сценарному делу, фактически формируя новое поколение уральских кинематографистов.</p>
+                <p>Наиболее продуктивный период её режиссерской деятельности пришелся на 2017–2018 годы, когда вышли её ключевые ленты: документальная картина «Земля» (2017) и игровые короткометражные фильмы «Саша не любил Пушкина» и «Млечная дорога» (2018). Эти работы успешно экспонировались на крупных российских фестивалях, таких как «Арткино» и «Осень кинофест». Сегодня Алёна продолжает развивать документальные и игровые проекты, выступает экспертом в «Ельцин Центре» и активно продвигает независимое кино на международном и региональном уровнях.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    background-color:#1a1a1a;
+    color:#f0f0f0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; 
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #e63946;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.profile_layout {
+    display: flex;
+    gap: 40px; 
+}
+
+
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+.photo_container img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.quick_info {
+    margin-top: 25px;
+    background: #252525;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.info{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.subinfo {
+    display: block;
+    font-size: 0.8rem;
+    color: #e63946; 
+    text-transform: uppercase;
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.bio{
+    flex: 2;
+}
+
+.bio h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.bio p {
+    margin-bottom: 20px;
+    color: #d1d1d1;
+}
+
+@media (max-width: 850px) {
+    body {
+        padding: 20px 15px; 
+    }
+
+    .profile_layout {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .sidebar {
+        min-width: 100%; 
+        order: 1; 
+    }
+
+    .bio {
+        order: 2;
+        text-align: left; 
+    }
+
+    .bio h2 {
+        font-size: 1.8rem; 
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .photo_container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+</style>

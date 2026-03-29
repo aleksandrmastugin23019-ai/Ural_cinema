@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9b9e9f901f6776b996287be1990b8ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b9b9e9f901f6776b996287be1990b8ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b9b9e9f901f6776b996287be1990b8ed = L.map(
+                "map_b9b9e9f901f6776b996287be1990b8ed",
+                {
+                    center: [57.5, 60.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "attributionControl": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f2f1dc6a6187180da7428503813d44c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6f2f1dc6a6187180da7428503813d44c.addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var marker_89380eb2bfdf93d4ccde4377cc0778fc = L.marker(
+                [56.8415, 60.6048],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_3556e59d26adeb986deca07ee0da7871 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8294498aaf3df91624f25fba739596e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_250db78ebb444a022d5c0a7111cfe342 = $(`<div id="html_250db78ebb444a022d5c0a7111cfe342" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Сломя голову (2023)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_8.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Реж. Е. Григорьев. Набережная Екб.</p>     </div>     </div>`)[0];
+                popup_8294498aaf3df91624f25fba739596e1.setContent(html_250db78ebb444a022d5c0a7111cfe342);
+            
+        
+
+        marker_89380eb2bfdf93d4ccde4377cc0778fc.bindPopup(popup_8294498aaf3df91624f25fba739596e1)
+        ;
+
+        
+    
+    
+            marker_89380eb2bfdf93d4ccde4377cc0778fc.bindTooltip(
+                `<div>
+                     Сломя голову (2023)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89380eb2bfdf93d4ccde4377cc0778fc.setIcon(icon_3556e59d26adeb986deca07ee0da7871);
+            
+    
+            var marker_8c9a26ccf13a86de2a8cefc4795acb84 = L.marker(
+                [57.8631, 58.6472],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_6e44b2c64cf22aa3ec33fb7aec0c0936 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25df03d9009609afaa893d3219b3b432 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac0246bebd6ff069676db9462b24e979 = $(`<div id="html_ac0246bebd6ff069676db9462b24e979" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Подельники (2021)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_K.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Реж. Е. Григорьев. Село Кын.</p>     </div>     </div>`)[0];
+                popup_25df03d9009609afaa893d3219b3b432.setContent(html_ac0246bebd6ff069676db9462b24e979);
+            
+        
+
+        marker_8c9a26ccf13a86de2a8cefc4795acb84.bindPopup(popup_25df03d9009609afaa893d3219b3b432)
+        ;
+
+        
+    
+    
+            marker_8c9a26ccf13a86de2a8cefc4795acb84.bindTooltip(
+                `<div>
+                     Подельники (2021)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c9a26ccf13a86de2a8cefc4795acb84.setIcon(icon_6e44b2c64cf22aa3ec33fb7aec0c0936);
+            
+    
+            var marker_d3274ad618ef0fe849b5723a22bb97f1 = L.marker(
+                [56.8289, 60.6035],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_e91c3989ea66678d566be1b8ec3a2872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04294ca0959fa75095584ea938a19681 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c5e0348db3e3e54763084a5e3127e04 = $(`<div id="html_3c5e0348db3e3e54763084a5e3127e04" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Про рок (2017)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Реж. Е. Григорьев. Документальный.</p>     </div>     </div>`)[0];
+                popup_04294ca0959fa75095584ea938a19681.setContent(html_3c5e0348db3e3e54763084a5e3127e04);
+            
+        
+
+        marker_d3274ad618ef0fe849b5723a22bb97f1.bindPopup(popup_04294ca0959fa75095584ea938a19681)
+        ;
+
+        
+    
+    
+            marker_d3274ad618ef0fe849b5723a22bb97f1.bindTooltip(
+                `<div>
+                     Про рок (2017)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3274ad618ef0fe849b5723a22bb97f1.setIcon(icon_e91c3989ea66678d566be1b8ec3a2872);
+            
+    
+            var marker_4a8cb7051ce1f8b0436ee4384373b303 = L.marker(
+                [56.8389, 60.6057],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_a7cc075d0ff6bd5f3ef565d5a24cd240 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_245b68674c6966a70e9f0d71a9fd4482 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e674e4f77f2e16d4f5df1f141ef88650 = $(`<div id="html_e674e4f77f2e16d4f5df1f141ef88650" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Руками (2022)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_5.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Реж. Е. Григорьев. Свердловская киностудия.</p>     </div>     </div>`)[0];
+                popup_245b68674c6966a70e9f0d71a9fd4482.setContent(html_e674e4f77f2e16d4f5df1f141ef88650);
+            
+        
+
+        marker_4a8cb7051ce1f8b0436ee4384373b303.bindPopup(popup_245b68674c6966a70e9f0d71a9fd4482)
+        ;
+
+        
+    
+    
+            marker_4a8cb7051ce1f8b0436ee4384373b303.bindTooltip(
+                `<div>
+                     Руками (2022)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a8cb7051ce1f8b0436ee4384373b303.setIcon(icon_a7cc075d0ff6bd5f3ef565d5a24cd240);
+            
+    
+            var marker_0c1e5690ed4c231e4e0c312ba3e922db = L.marker(
+                [57.0, 60.0],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_a15f948b287254aa43b1c077a600b3c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c9317daceaa7f741ebf8f81c9d5b12c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_60ae900279c0497375195763a0a64866 = $(`<div id="html_60ae900279c0497375195763a0a64866" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Лёха из Островного (2001)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Реж. Е. Григорьев. Свердловская обл.</p>     </div>     </div>`)[0];
+                popup_8c9317daceaa7f741ebf8f81c9d5b12c.setContent(html_60ae900279c0497375195763a0a64866);
+            
+        
+
+        marker_0c1e5690ed4c231e4e0c312ba3e922db.bindPopup(popup_8c9317daceaa7f741ebf8f81c9d5b12c)
+        ;
+
+        
+    
+    
+            marker_0c1e5690ed4c231e4e0c312ba3e922db.bindTooltip(
+                `<div>
+                     Лёха из Островного (2001)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c1e5690ed4c231e4e0c312ba3e922db.setIcon(icon_a15f948b287254aa43b1c077a600b3c4);
+            
+    
+            var marker_4e2286cfa9356f468569efec89fd592e = L.marker(
+                [56.4172, 61.9161],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_b8d5a3b32663efce77619245d6902147 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43fe06c41381627d944d38cd1664d72d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d306abc106ebf254f7b154f7e24a1579 = $(`<div id="html_d306abc106ebf254f7b154f7e24a1579" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Мой дикий друг (2024)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_KU.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Креат. прод. Е. Григорьев. Каменск-Уральский.</p>     </div>     </div>`)[0];
+                popup_43fe06c41381627d944d38cd1664d72d.setContent(html_d306abc106ebf254f7b154f7e24a1579);
+            
+        
+
+        marker_4e2286cfa9356f468569efec89fd592e.bindPopup(popup_43fe06c41381627d944d38cd1664d72d)
+        ;
+
+        
+    
+    
+            marker_4e2286cfa9356f468569efec89fd592e.bindTooltip(
+                `<div>
+                     Мой дикий друг (2024)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e2286cfa9356f468569efec89fd592e.setIcon(icon_b8d5a3b32663efce77619245d6902147);
+            
+    
+            var marker_4ad84fb24f4187fac0865f4a940ebee5 = L.marker(
+                [58.2831, 57.8041],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_6d27ccbfa3212061035e3be22792aa82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e6840ff9147ccc0a4cfd05aacefe3b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_78e208f24b611c56b45abfec36db6867 = $(`<div id="html_78e208f24b611c56b45abfec36db6867" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Втроём (2024)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_PERM.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Продюсер А. Тремазова. Этнопарк Чусового.</p>     </div>     </div>`)[0];
+                popup_1e6840ff9147ccc0a4cfd05aacefe3b6.setContent(html_78e208f24b611c56b45abfec36db6867);
+            
+        
+
+        marker_4ad84fb24f4187fac0865f4a940ebee5.bindPopup(popup_1e6840ff9147ccc0a4cfd05aacefe3b6)
+        ;
+
+        
+    
+    
+            marker_4ad84fb24f4187fac0865f4a940ebee5.bindTooltip(
+                `<div>
+                     Втроём (2024)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ad84fb24f4187fac0865f4a940ebee5.setIcon(icon_6d27ccbfa3212061035e3be22792aa82);
+            
+    
+            var marker_d13f71e7556dda17aa7ba55d155899c7 = L.marker(
+                [56.8383, 60.605],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_b30d060ba805265bd340696b1ad5e61c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_315307093fb3f488725a1f0b19dfc2ad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0920d5c104f2c4e2a3eaeb7a2bcf866a = $(`<div id="html_0920d5c104f2c4e2a3eaeb7a2bcf866a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Млечная дорога (2018)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_6.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Реж. А. Тремазова. Екатеринбург.</p>     </div>     </div>`)[0];
+                popup_315307093fb3f488725a1f0b19dfc2ad.setContent(html_0920d5c104f2c4e2a3eaeb7a2bcf866a);
+            
+        
+
+        marker_d13f71e7556dda17aa7ba55d155899c7.bindPopup(popup_315307093fb3f488725a1f0b19dfc2ad)
+        ;
+
+        
+    
+    
+            marker_d13f71e7556dda17aa7ba55d155899c7.bindTooltip(
+                `<div>
+                     Млечная дорога (2018)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d13f71e7556dda17aa7ba55d155899c7.setIcon(icon_b30d060ba805265bd340696b1ad5e61c);
+            
+    
+            var marker_d4da6789ad2dbbcf1366d59ed9f87873 = L.marker(
+                [56.5055, 60.3638],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_b495c06df0d0ee428c40dcd6ce9d0ee1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ef05f36335d9882388dc90415117c96 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99a7cea37679519f8dd3668214c2f060 = $(`<div id="html_99a7cea37679519f8dd3668214c2f060" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Земля (2017)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_S.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Проект А. Тремазовой. Сысерть.</p>     </div>     </div>`)[0];
+                popup_5ef05f36335d9882388dc90415117c96.setContent(html_99a7cea37679519f8dd3668214c2f060);
+            
+        
+
+        marker_d4da6789ad2dbbcf1366d59ed9f87873.bindPopup(popup_5ef05f36335d9882388dc90415117c96)
+        ;
+
+        
+    
+    
+            marker_d4da6789ad2dbbcf1366d59ed9f87873.bindTooltip(
+                `<div>
+                     Земля (2017)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d4da6789ad2dbbcf1366d59ed9f87873.setIcon(icon_b495c06df0d0ee428c40dcd6ce9d0ee1);
+            
+    
+            var marker_d1842de997f860ba712ca46b7686f5b8 = L.marker(
+                [56.84, 60.615],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_46cc85fea8a2bbc0a1e3b0b7210291c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bb6696f31692f295f1ad5c9cd09cc38 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9759aa4754f7386815e93e3473291e54 = $(`<div id="html_9759aa4754f7386815e93e3473291e54" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Саша не любил Пушкина (2018)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Реж. А. Тремазова. Литквартал Екб.</p>     </div>     </div>`)[0];
+                popup_6bb6696f31692f295f1ad5c9cd09cc38.setContent(html_9759aa4754f7386815e93e3473291e54);
+            
+        
+
+        marker_d1842de997f860ba712ca46b7686f5b8.bindPopup(popup_6bb6696f31692f295f1ad5c9cd09cc38)
+        ;
+
+        
+    
+    
+            marker_d1842de997f860ba712ca46b7686f5b8.bindTooltip(
+                `<div>
+                     Саша не любил Пушкина (2018)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1842de997f860ba712ca46b7686f5b8.setIcon(icon_46cc85fea8a2bbc0a1e3b0b7210291c8);
+            
+    
+            var marker_4e6e7ab892fa35f9e9f6e633cfca5570 = L.marker(
+                [56.836, 60.612],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_c4a7d97819f9da3696cfd0ad4d5566b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b218d3e49237960abc98dbff8ebaf404 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_935ceef175ce8c46306e7726053c8eac = $(`<div id="html_935ceef175ce8c46306e7726053c8eac" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">На дне города (2016)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Реж. А. Тремазова. Исторический сквер.</p>     </div>     </div>`)[0];
+                popup_b218d3e49237960abc98dbff8ebaf404.setContent(html_935ceef175ce8c46306e7726053c8eac);
+            
+        
+
+        marker_4e6e7ab892fa35f9e9f6e633cfca5570.bindPopup(popup_b218d3e49237960abc98dbff8ebaf404)
+        ;
+
+        
+    
+    
+            marker_4e6e7ab892fa35f9e9f6e633cfca5570.bindTooltip(
+                `<div>
+                     На дне города (2016)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e6e7ab892fa35f9e9f6e633cfca5570.setIcon(icon_c4a7d97819f9da3696cfd0ad4d5566b6);
+            
+    
+            var marker_7cab2489fa94e131a13961b0dce96e57 = L.marker(
+                [56.85, 60.6],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_7d8a055b7b001383a77f600f7505444c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f749446552bd122ecea2343e234a66a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_26d186189decfa11a4a3f2aa1534ca1a = $(`<div id="html_26d186189decfa11a4a3f2aa1534ca1a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Хорошая девочка Лида (2021)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Реж. А. Тремазова. Екатеринбург.</p>     </div>     </div>`)[0];
+                popup_f749446552bd122ecea2343e234a66a4.setContent(html_26d186189decfa11a4a3f2aa1534ca1a);
+            
+        
+
+        marker_7cab2489fa94e131a13961b0dce96e57.bindPopup(popup_f749446552bd122ecea2343e234a66a4)
+        ;
+
+        
+    
+    
+            marker_7cab2489fa94e131a13961b0dce96e57.bindTooltip(
+                `<div>
+                     Хорошая девочка Лида (2021)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cab2489fa94e131a13961b0dce96e57.setIcon(icon_7d8a055b7b001383a77f600f7505444c);
+            
+    
+            var marker_c06966a7961fcb5b8d8187c405f32e83 = L.marker(
+                [56.833, 60.59],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_c1915ea81e2c111dbe79b5b7898bb0b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99f62789ee6a7add6847d70338679c1a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe317c89c8ee2a602922dc2c06faab4e = $(`<div id="html_fe317c89c8ee2a602922dc2c06faab4e" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Второе солнце (2021)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Монтаж: А. Тремазова. Екатеринбург.</p>     </div>     </div>`)[0];
+                popup_99f62789ee6a7add6847d70338679c1a.setContent(html_fe317c89c8ee2a602922dc2c06faab4e);
+            
+        
+
+        marker_c06966a7961fcb5b8d8187c405f32e83.bindPopup(popup_99f62789ee6a7add6847d70338679c1a)
+        ;
+
+        
+    
+    
+            marker_c06966a7961fcb5b8d8187c405f32e83.bindTooltip(
+                `<div>
+                     Второе солнце (2021)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c06966a7961fcb5b8d8187c405f32e83.setIcon(icon_c1915ea81e2c111dbe79b5b7898bb0b6);
+            
+    
+            var marker_5e3140f902cbd57b4fe7939e3007f66b = L.marker(
+                [57.0676, 59.9346],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_2b53f70ef7afbb9bcf4ec772f4fb083a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7718a9414b5c447ffc6094d4ef68f157 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2fbecfe75bfbf211ff9f3d04094b27fe = $(`<div id="html_2fbecfe75bfbf211ff9f3d04094b27fe" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Ой, вы, кони (2016)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Реж.: А. Тремазова. дер. Починок, Конный двор</p>     </div>     </div>`)[0];
+                popup_7718a9414b5c447ffc6094d4ef68f157.setContent(html_2fbecfe75bfbf211ff9f3d04094b27fe);
+            
+        
+
+        marker_5e3140f902cbd57b4fe7939e3007f66b.bindPopup(popup_7718a9414b5c447ffc6094d4ef68f157)
+        ;
+
+        
+    
+    
+            marker_5e3140f902cbd57b4fe7939e3007f66b.bindTooltip(
+                `<div>
+                     Ой, вы, кони (2016)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e3140f902cbd57b4fe7939e3007f66b.setIcon(icon_2b53f70ef7afbb9bcf4ec772f4fb083a);
+            
+    
+            var marker_faa96b4387b76c2bfde0e221c484a352 = L.marker(
+                [56.8406, 60.6134],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_d398c67392d319e8034331ef6f5320a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a84ba69af5d642650f33decd2e44d7f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ef5227be1573ba8344a62a7e22ab33e = $(`<div id="html_5ef5227be1573ba8344a62a7e22ab33e" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Бесконечный апрель (2025)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_3.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Реж. А. Бутаков. Театр ЦСД.</p>     </div>     </div>`)[0];
+                popup_6a84ba69af5d642650f33decd2e44d7f.setContent(html_5ef5227be1573ba8344a62a7e22ab33e);
+            
+        
+
+        marker_faa96b4387b76c2bfde0e221c484a352.bindPopup(popup_6a84ba69af5d642650f33decd2e44d7f)
+        ;
+
+        
+    
+    
+            marker_faa96b4387b76c2bfde0e221c484a352.bindTooltip(
+                `<div>
+                     Бесконечный апрель (2025)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_faa96b4387b76c2bfde0e221c484a352.setIcon(icon_d398c67392d319e8034331ef6f5320a8);
+            
+    
+            var marker_8d6f09e98e93d887c2648ee32819c145 = L.marker(
+                [56.84, 60.613],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_abedfa62e7d9ff3702b7c6674495766e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b21e66bdea00a794d04bfee9d2b97712 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bec40522acae0db5362bd228db9735eb = $(`<div id="html_bec40522acae0db5362bd228db9735eb" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Уроки танцев (2026)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Актер: А. Бутаков. В производстве.</p>     </div>     </div>`)[0];
+                popup_b21e66bdea00a794d04bfee9d2b97712.setContent(html_bec40522acae0db5362bd228db9735eb);
+            
+        
+
+        marker_8d6f09e98e93d887c2648ee32819c145.bindPopup(popup_b21e66bdea00a794d04bfee9d2b97712)
+        ;
+
+        
+    
+    
+            marker_8d6f09e98e93d887c2648ee32819c145.bindTooltip(
+                `<div>
+                     Уроки танцев (2026)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d6f09e98e93d887c2648ee32819c145.setIcon(icon_abedfa62e7d9ff3702b7c6674495766e);
+            
+    
+            var marker_96f5ff807fcfef6443a76a33db39ac9f = L.marker(
+                [56.838, 60.597],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_cf0c786a678f773a00b2e3b01f6717ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91a8572bdf05ba5be6ec86880461315a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_87475af96f88d211b19c5ed11c6f6d3c = $(`<div id="html_87475af96f88d211b19c5ed11c6f6d3c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Исчезнувший велосипедист (2023)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_7.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Актер: А. Бутаков. Центр Екб.</p>     </div>     </div>`)[0];
+                popup_91a8572bdf05ba5be6ec86880461315a.setContent(html_87475af96f88d211b19c5ed11c6f6d3c);
+            
+        
+
+        marker_96f5ff807fcfef6443a76a33db39ac9f.bindPopup(popup_91a8572bdf05ba5be6ec86880461315a)
+        ;
+
+        
+    
+    
+            marker_96f5ff807fcfef6443a76a33db39ac9f.bindTooltip(
+                `<div>
+                     Исчезнувший велосипедист (2023)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96f5ff807fcfef6443a76a33db39ac9f.setIcon(icon_cf0c786a678f773a00b2e3b01f6717ac);
+            
+    
+            var marker_5fe4c04afbd3d718e71c66d9e464d517 = L.marker(
+                [56.8333, 60.6],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_ea1ef74320ffc208f3801a9b598217c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c9f22f3e97a4e9be01cf8e0b3b62b8d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f44b9bead9bb96ba5b5d01a41f995722 = $(`<div id="html_f44b9bead9bb96ba5b5d01a41f995722" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Телохранители (2023)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Сериал. Актер: А. Бутаков. Екб.</p>     </div>     </div>`)[0];
+                popup_5c9f22f3e97a4e9be01cf8e0b3b62b8d.setContent(html_f44b9bead9bb96ba5b5d01a41f995722);
+            
+        
+
+        marker_5fe4c04afbd3d718e71c66d9e464d517.bindPopup(popup_5c9f22f3e97a4e9be01cf8e0b3b62b8d)
+        ;
+
+        
+    
+    
+            marker_5fe4c04afbd3d718e71c66d9e464d517.bindTooltip(
+                `<div>
+                     Телохранители (2023)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fe4c04afbd3d718e71c66d9e464d517.setIcon(icon_ea1ef74320ffc208f3801a9b598217c5);
+            
+    
+            var marker_ceb0eb9163908e66a7c556bb391ceca2 = L.marker(
+                [56.834, 60.6025],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_1e3446d9c54eae0964d2f0a7d5f3e5b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6c13910ee13c39baba14c8d8f64e02c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cb63a123e3a15138464237abe62c8f00 = $(`<div id="html_cb63a123e3a15138464237abe62c8f00" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Война Анны (2018)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_2.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Актер: А. Бутаков. Здание ГЦСИ.</p>     </div>     </div>`)[0];
+                popup_a6c13910ee13c39baba14c8d8f64e02c.setContent(html_cb63a123e3a15138464237abe62c8f00);
+            
+        
+
+        marker_ceb0eb9163908e66a7c556bb391ceca2.bindPopup(popup_a6c13910ee13c39baba14c8d8f64e02c)
+        ;
+
+        
+    
+    
+            marker_ceb0eb9163908e66a7c556bb391ceca2.bindTooltip(
+                `<div>
+                     Война Анны (2018)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ceb0eb9163908e66a7c556bb391ceca2.setIcon(icon_1e3446d9c54eae0964d2f0a7d5f3e5b1);
+            
+    
+            var marker_7a7547130e26168df2583e76156ccef7 = L.marker(
+                [56.839, 60.61],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_c3d1e41b5eafac91a76b4ac760d3004b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3737b22156293bc6c4ce0ac6b2417f2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d6c5ee5a0d6145bd95df8d82574272f = $(`<div id="html_4d6c5ee5a0d6145bd95df8d82574272f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Последняя «Милая Болгария» (2021)</h4>         <div style="width: 100%; height: 120px; overflow: hidden; border-radius: 5px; margin-bottom: 5px;"><img src="img/img_map_EKB_4.jpg" style="width: 100%; height: 100%; object-fit: cover;"></div>         <p style="font-size: 12px; color: #444; margin: 0;">Актер: А. Бутаков. Исторический Екб.</p>     </div>     </div>`)[0];
+                popup_b3737b22156293bc6c4ce0ac6b2417f2.setContent(html_4d6c5ee5a0d6145bd95df8d82574272f);
+            
+        
+
+        marker_7a7547130e26168df2583e76156ccef7.bindPopup(popup_b3737b22156293bc6c4ce0ac6b2417f2)
+        ;
+
+        
+    
+    
+            marker_7a7547130e26168df2583e76156ccef7.bindTooltip(
+                `<div>
+                     Последняя «Милая Болгария» (2021)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a7547130e26168df2583e76156ccef7.setIcon(icon_c3d1e41b5eafac91a76b4ac760d3004b);
+            
+    
+            var marker_f5b510ada1702fa0b9c7675f72b9e8d2 = L.marker(
+                [56.835, 60.61],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_f70c3862a01b0674b79eeb57c660fe64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2746a6cac248879a3ab1b21a27428739 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_07fac5f5d011f6797a59e2502677dd68 = $(`<div id="html_07fac5f5d011f6797a59e2502677dd68" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">Путешествие (2018/2019)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Актер: А. Бутаков. Екатеринбург.</p>     </div>     </div>`)[0];
+                popup_2746a6cac248879a3ab1b21a27428739.setContent(html_07fac5f5d011f6797a59e2502677dd68);
+            
+        
+
+        marker_f5b510ada1702fa0b9c7675f72b9e8d2.bindPopup(popup_2746a6cac248879a3ab1b21a27428739)
+        ;
+
+        
+    
+    
+            marker_f5b510ada1702fa0b9c7675f72b9e8d2.bindTooltip(
+                `<div>
+                     Путешествие (2018/2019)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f5b510ada1702fa0b9c7675f72b9e8d2.setIcon(icon_f70c3862a01b0674b79eeb57c660fe64);
+            
+    
+            var marker_2c1d52bff3f9f8dfb2f10d4dbf021f8c = L.marker(
+                [56.841, 60.614],
+                {
+}
+            ).addTo(map_b9b9e9f901f6776b996287be1990b8ed);
+        
+    
+            var icon_5ea0f95a232f15f06a7fd58c2466a4d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3a691057bca8de1d34620ec25df778e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93171b5d7cce92e0f1e08ede3b65852d = $(`<div id="html_93171b5d7cce92e0f1e08ede3b65852d" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family: sans-serif; line-height: 1.3;">         <h4 style="margin: 0 0 5px 0;">КиноLook (2016)</h4>                  <p style="font-size: 12px; color: #444; margin: 0;">Альманах / Школа кино Look.</p>     </div>     </div>`)[0];
+                popup_c3a691057bca8de1d34620ec25df778e.setContent(html_93171b5d7cce92e0f1e08ede3b65852d);
+            
+        
+
+        marker_2c1d52bff3f9f8dfb2f10d4dbf021f8c.bindPopup(popup_c3a691057bca8de1d34620ec25df778e)
+        ;
+
+        
+    
+    
+            marker_2c1d52bff3f9f8dfb2f10d4dbf021f8c.bindTooltip(
+                `<div>
+                     КиноLook (2016)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c1d52bff3f9f8dfb2f10d4dbf021f8c.setIcon(icon_5ea0f95a232f15f06a7fd58c2466a4d0);
+            
+</script>
+</html>
